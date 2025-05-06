@@ -42,7 +42,11 @@ io.on('connection', socket=>{
         messages.push(data);
 
         socket.broadcast.emit('receivedMessage', data);
-    })
+
+        console.log('QTD MENSAGENS: '+messages.length)
+    });
+
+    console.log('QTD MENSAGENS: '+messages.length)
 })
 
 server.listen(3000, ()=>{console.log("chat rodando em http://localhost:3000")});
