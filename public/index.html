@@ -31,7 +31,7 @@
 
         //Função de renderização de mensagem no navegador:
         function renderMessage(message){
-           $('.messages').append('<div class="message"><strong>'+message.author + message.data_hora + '</strong>: '+message.message) 
+           $('.messages').append('<div class="message"><strong>'+message.usuario + message.data_hora + '</strong>: '+message.message) 
         }
 
         //Recupera as mensagens anteriores de todos os usuarios e exibe no navegador:
@@ -64,7 +64,7 @@
 
             //Criação do objeto JSON da mensagem
             var messageObject = {
-                author: usuario,
+                usuario: usuario,
                 data_hora: data_hora_msg,
                 message: mensagem
             }
